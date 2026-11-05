@@ -7,11 +7,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Unchpokable/dsh-usage-credits.git"
+    "url": "git+https://github.com/exterme-russian-dsh-fandom/dsh-usage-credits.git"
   },
-  "homepage": "https://github.com/Unchpokable/dsh-usage-credits#readme",
+  "homepage": "https://github.com/exterme-russian-dsh-fandom/dsh-usage-credits#readme",
   "bugs": {
-    "url": "https://github.com/Unchpokable/dsh-usage-credits/issues"
+    "url": "https://github.com/exterme-russian-dsh-fandom/dsh-usage-credits/issues"
   },
   "keywords": [
     "dsh",

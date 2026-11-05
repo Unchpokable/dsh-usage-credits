@@ -81,11 +81,11 @@ cost = (uncachedInput + cacheWrite) × miss
 
 ## Установка
 
-Корень репозитория **и есть** бандл, а сам плагин — обычная pnpm-зависимость, поэтому подходят и ссылка на GitHub, и локальный клон. В Desktop откройте Plugin Manager и установите плагин прямо по ссылке на репозиторий — `https://github.com/Unchpokable/dsh-usage-credits` — либо из шелла:
+Корень репозитория **и есть** бандл, а сам плагин — обычная pnpm-зависимость, поэтому подходят и ссылка на GitHub, и локальный клон. В Desktop откройте Plugin Manager и установите плагин прямо по ссылке на репозиторий — `https://github.com/exterme-russian-dsh-fandom/dsh-usage-credits` — либо из шелла:
 
 ```bash
 # из GitHub (добавьте #<branch-or-commit>, чтобы зафиксировать ревизию)
-dsh plugin --profile <profile> add github:Unchpokable/dsh-usage-credits
+dsh plugin --profile <profile> add github:exterme-russian-dsh-fandom/dsh-usage-credits
 
 # из локального клона
 dsh plugin --profile <profile> add C:\path\to\dsh-usage-credits
