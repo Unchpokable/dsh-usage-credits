@@ -85,20 +85,21 @@ Either way the balance never leaves your machine: the browser talks to your loca
 
 ## Install
 
-The repository root **is** the bundle, so a clone is directly installable.
+The repository root **is** the bundle, and the package is a normal pnpm dependency, so a GitHub ref and a local checkout both work. In Desktop, open the Plugin Manager and install it straight from the repository link — `https://github.com/Unchpokable/dsh-usage-credits` — or from a shell:
 
 ```bash
-git clone https://github.com/Unchpokable/dsh-usage-credits.git
+# from GitHub (append #<branch-or-commit> to pin a revision)
+dsh plugin --profile <profile> add github:Unchpokable/dsh-usage-credits
+
+# from a local checkout
+dsh plugin --profile <profile> add C:\path\to\dsh-usage-credits
 ```
 
-Then let DSH install that directory as a bundle (Plugin Manager → install bundle from a local path), or do what the installer does by hand in your profile:
+`github:` is pnpm's GitHub shorthand, not a DSH-specific scheme: `dsh plugin` forwards the arguments to pnpm, and the Plugin Manager's install path checks the repository with `git ls-remote` before running `pnpm add`. A Git dependency is versioned by the ref you name (or the default branch), so pin a tag, a commit, or the branch that carries the plugin when the default branch does not have it yet.
 
-```bash
-cd ~/.dsh/profiles/<profile>
-pnpm add /path/to/dsh-usage-credits
-```
+A local checkout is linked rather than copied, so `git pull` there reaches the running plugin after a page reload; a Git install is a fetched copy, and moving it to a newer ref means reinstalling.
 
-and add `@local/dsh-api-credits` to `dsh.profile.bundles` in the profile's `package.json`. Restart the app, then reload the page.
+The bundle patch inserts one row, `api-credits`. It has no dependencies and no build step: the Host half registers the token-guarded balance route, the Client half registers both dock pills and the Settings page.
 
 Requires a signed-in DeepSeek account for the balance; without one the plugin shows a sign-in hint and still displays the rate.
 
