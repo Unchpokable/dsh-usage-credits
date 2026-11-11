@@ -85,11 +85,11 @@ Either way the balance never leaves your machine: the browser talks to your loca
 
 ## Install
 
-The repository root **is** the bundle, and the package is a normal pnpm dependency, so a GitHub ref and a local checkout both work. In Desktop, open the Plugin Manager and install it straight from the repository link — `https://github.com/exterme-russian-dsh-fandom/dsh-usage-credits` — or from a shell:
+The repository root **is** the bundle, and the package is a normal pnpm dependency, so a GitHub ref and a local checkout both work. In Desktop, open the Plugin Manager and install it straight from the repository link — `https://github.com/extreme-russian-dsh-fandom/dsh-usage-credits` — or from a shell:
 
 ```bash
 # from GitHub (append #<branch-or-commit> to pin a revision)
-dsh plugin --profile <profile> add github:exterme-russian-dsh-fandom/dsh-usage-credits
+dsh plugin --profile <profile> add github:extreme-russian-dsh-fandom/dsh-usage-credits
 
 # from a local checkout
 dsh plugin --profile <profile> add C:\path\to\dsh-usage-credits

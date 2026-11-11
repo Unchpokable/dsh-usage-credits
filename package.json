@@ -1,17 +1,17 @@
 {
-  "name": "@local/dsh-api-credits",
-  "version": "1.0.0",
+  "name": "dsh-usage-credits",
+  "version": "1.0.1",
   "private": true,
   "type": "module",
   "description": "DSH plugin: API credit balance and cache-aware session spend, converted from CNY to USD and a chosen local currency at live exchange rates.",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/exterme-russian-dsh-fandom/dsh-usage-credits.git"
+    "url": "git+https://github.com/extreme-russian-dsh-fandom/dsh-usage-credits.git"
   },
-  "homepage": "https://github.com/exterme-russian-dsh-fandom/dsh-usage-credits#readme",
+  "homepage": "https://github.com/extreme-russian-dsh-fandom/dsh-usage-credits#readme",
   "bugs": {
-    "url": "https://github.com/exterme-russian-dsh-fandom/dsh-usage-credits/issues"
+    "url": "https://github.com/extreme-russian-dsh-fandom/dsh-usage-credits/issues"
   },
   "keywords": [
     "dsh",
