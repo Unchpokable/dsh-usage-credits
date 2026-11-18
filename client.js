@@ -1,5 +1,5 @@
 window.__ModuleLoader__.load({
-  id: '@local/dsh-api-credits',
+  id: 'dsh-usage-credits',
   factory(require) {
     const React = require('react');
     const h = React.createElement;
@@ -1649,7 +1649,7 @@ window.__ModuleLoader__.load({
 
         ctx.effect(() => {
           const tag = document.createElement('style');
-          tag.dataset.plugin = '@local/dsh-api-credits';
+          tag.dataset.plugin = 'dsh-usage-credits';
           tag.textContent = STYLE;
           document.head.appendChild(tag);
           return () => tag.remove();

@@ -1,3 +1,3 @@
 - insert:
     - id: api-credits
-      name: '@local/dsh-api-credits'
+      name: 'dsh-usage-credits'
